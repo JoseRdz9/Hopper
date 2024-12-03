@@ -1,0 +1,30 @@
+body{
+    background-image: url('../img/fondo.jpg'); /* Ruta de la imagen */
+    background-repeat: repeat; /* Repetir el patrón en ambas direcciones (horizontal y vertical) */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.page-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #2980b9;
+}

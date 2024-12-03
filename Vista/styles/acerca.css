@@ -1,0 +1,26 @@
+body{
+    background-image: url('../img/fondo.jpg'); /* Ruta de la imagen */
+    background-repeat: repeat; /* Repetir el patrón en ambas direcciones (horizontal y vertical) */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.middleside {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    padding: 50px;
+    background: rgba(200, 200, 200, 0.529); /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 600px;
+    
+}
+p{
+    line-height: 2;
+}

@@ -1,0 +1,69 @@
+/* Aquí puedes agregar estilos adicionales si es necesario */
+body {
+    background-image: url('../img/fondo.jpg'); /* Ruta de la imagen */
+    background-repeat: repeat; /* Repetir el patrón en ambas direcciones (horizontal y vertical) */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-form {
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    color: #fff;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3586ff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+
+.submit-button:hover{
+    background: #fff;
+    border: 2px solid var(--text-color);
+    color: black;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #08162a;
+    color: #fff;
+}

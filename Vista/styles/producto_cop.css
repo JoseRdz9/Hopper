@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+body {
+    background-image: url('../img/fondo.jpg');
+    /* Ruta de la imagen */
+    background-repeat: repeat;
+    background-size: contain;
+    font-family: "Michroma", sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    margin-top: -40px;
+}
+
+.boton-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: centers;
+}
+
+.accion h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-top: 200px;
+    max-height: 100px;
+}
+
+
+
+
+.boton:hover {
+    transform: translateY(-5px) scale(1.1);
+    transition: all ease .55s;
+}
+
+.boton i {
+    position: relative;
+    top: 190px;
+    font-size: 35px;
+    color: #fff;
+
+}
+
+
+.boton-container .boton {
+    background: rgba(200, 200, 200, 0.114);
+    /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+    height: 200px;
+    width: 270px;
+    text-align: center;
+    border-radius: 20px;
+    border: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0 .3);
+    margin: 40px;
+    cursor: pointer;
+    transition: all ease .55s;
+}
+
+.boton-container .boton:hover {
+    background-color: #757575;
+}
+
+/*Prueba de h2 */
+
+
+/*Prueba de h2 */
+
+.boton-container .boton h2 {
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    color: #fff;
+    margin: -125px 0;
+}
+
+--------------------------------- .contain {
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    padding: 120px 10% 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: centers;
+}
+
+.box-container .table {
+    height: 300px;
+    width: 1320px;
+    background-color: #b4b4b4;
+    text-align: center;
+    border-radius: 20px;
+    border: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0 .3);
+    margin: 40px;
+    cursor: pointer;
+}
+
+.box-container .thead {
+    background: #757575;
+}
+
+.box-container .th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 70px;
+}
+
+.box-container .td {
+    padding: 15px;
+    border-bottom: #000000;
+}
+
+
+/*modal*/
+
+
+
+/* Estilo base del modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    /* Animación de entrada */
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background: rgba(74, 70, 70, 0.796);
+    /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    max-height: 800px;
+    text-align: center;
+    position: relative;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+        /* Escala inicial (más pequeño) */
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        /* Escala final (normal) */
+    }
+}
+
+/* Animación de salida */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(2);
+        /* Escala inicial (normal) */
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+        /* Escala final (más pequeño) */
+    }
+}
+
+/* Estilo para ocultar el modal */
+.modal.hide {
+    display: none;
+    animation: fadeOut 0.3s ease-in-out forwards;
+    /* Animación de salida */
+}
+
+
+.modal-content h2 {
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    padding: auto;
+    align-items: center;
+    height: 350px;
+    width: 900px;
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    background: rgba(158, 157, 157, 0.551);
+    /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+    margin-right: 77px;
+    border-radius: 20px;
+}
+
+.item img {
+    width: 200px;
+    height: 150px;
+    padding: auto;
+    transition: all ease .55s;
+}
+
+.item img:hover {
+    transform: translateY(-5px) scale(1.1);
+    transition: all ease .55s;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.precio{
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* styles.css */
+
+.add-btn {
+    margin-top: 10px;
+}
+
+/* styles.css */
+.selected-products {
+    position: relative;
+    list-style: none;
+}
+
+
+
+.selected-products li {
+    background: red;
+    position: relative;
+    top: 50px;
+    left: 0;
+    object-fit: contain;
+}
+
+.boton ul {
+    position: relative;
+    top: 86px;
+    border-radius: 20px;
+}
+
+/*lista*/
+
+
+
+.resumen-total h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+#resumen-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+#resumen-list li {
+
+    margin: 10px;
+}
+
+
+
+
+#resumen-list li {
+    background: rgba(255, 255, 255, 0.741);
+    /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 23px;
+    margin: 10px;
+    width: 65%;
+    height: 144px;
+    border-radius: 20px;
+    border-width: 1px;
+}
+
+#resumen-list li.total {
+    background: rgba(114, 114, 114, 0.741);
+    /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding: 23px;
+    /* Agrega un espacio interno de 10px alrededor del contenido */
+    margin: 10px;
+    /* Agrega un espacio externo de 10px alrededor de cada elemento */
+    width: 40%;
+    height: 65px;
+    border-radius: 20px;
+    border-width: 1px;
+}
+
+.agregar-carrito {
+    background: var(--main-color);
+    align-items: center;
+    display: flex;
+    right: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--bg-color);
+    padding: 23px;
+    /* Agrega un espacio interno de 10px alrededor del contenido */
+    margin: 10px;
+    /* Agrega un espacio externo de 10px alrededor de cada elemento */
+    margin-bottom: 60px;
+    width: 40%;
+    height: 47px;
+    border-radius: 20px;
+    border-width: 1px;
+
+    display: inline-block;
+    padding: 10px 25px;
+    color: var(--bg-color);
+    background: var(--main-color);
+
+    font-weight: 500;
+
+    border: 2px solid var(--main-color);
+    margin-right: 20px;
+    transition: all ease .55s;
+
+}
+
+.agregar-carrito:hover {
+    background: #fff;
+    border: 2px solid var(--text-color);
+    color: black;
+    font-size: 16px;
+}
+
+
+.carrito-resumen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-text {
+    font-size: 15px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: black;
+}
+
+
+
+.mostrar-ocultar-btn {
+    position: relative;
+    bottom: 11px;
+    font-size: 14px;
+    left: 730px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #3586ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    border: 2px solid var(--main-color);
+    margin: 30px;
+    transition: all ease .55s;
+
+}
+
+.mostrar-ocultar-btn:hover {
+    background: #fff;
+    border: 2px solid var(--text-color);
+    color: black;
+    font-size: 16px;
+}
+
+#resumen-list {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.oculta {
+    transform: translateX(-100%);
+}

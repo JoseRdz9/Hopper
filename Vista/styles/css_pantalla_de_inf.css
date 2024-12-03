@@ -1,0 +1,90 @@
+
+/*navbar*/
+
+
+
+
+
+body{
+    background-image: url('../img/fondo.jpg'); /* Ruta de la imagen */
+    background-repeat: repeat; /* Repetir el patrón en ambas direcciones (horizontal y vertical) */
+    background-size: cover;
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 250px;
+    margin-bottom: 100px;
+    padding: 50px;
+    background: rgba(200, 200, 200, 0.529); /* Fondo grisáceo claro con opacidad */
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 600px;
+}
+
+.letras_verdes{ 
+    color: #fff;
+}
+.letras_azules{
+    color: #4259ad;
+}
+h1 {
+    color: #fff;
+}
+
+
+.product-info {
+    position: relative;
+    bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    float: right; 
+    height: 800px;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.product-image {
+    padding: 30px;
+    width: 120px;   
+    margin-right: 20px;  
+    float: left;
+}
+
+
+
+.product-description {
+    margin-top: 200px;
+    line-height: 1.4;
+}
+
+#miBoton {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    background: #3586ff; /* Color de fondo */
+    margin: 10px;
+    width: 300px;
+    color: rgb(255, 255, 255); /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all ease .55s;
+    
+}
+
+#miBoton:hover{
+    background: #fff;
+    font-size: 15px;
+    border: 2px solid black;
+    color: black;
+}
+
